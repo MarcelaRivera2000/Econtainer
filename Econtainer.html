@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Econtainer</title>
+    <link rel="stylesheet" href="./Econtainer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="l2.png">
+</head>
+<body>
+    <header >
+        <div class ="wrapper">
+            <p class="ds">EC<img src="./l.png" class="logo"></img>NTAINER</p>
+            <nav>
+                <a href="./Ubicaciones.html"  type="button">Ubicacion</a>
+                <a href="./AboutUs.html" type="button">Sobre Nosotros</a>
+                <a href="./Econtainer.html"  type="button">Home</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="peses.jpg" class="tamano" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="peses2.jpg" class="tamano"
+                    alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class ="wrapper">
+        <meter  class="progressBar" min="0" max="500" low="90"  high="400" value="60"></meter>
+        <div >
+            <button id="boton1">Agregar Plastico</button>
+            <button id="boton">Calculadora</button>
+        </div>
+        <div class="ListaPlasticos" id="ListaPlasticos">
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times">x</i></a>
+            <h3 class ="wrapper">AGREGAR UN NUEVO PLASTICO</h3>
+            <br>
+            <p>Ingrese la cantidad: <input id= "tam" type="text"/></p>
+            <form action="">
+                <div class="contenedor-inputs wrapper">
+                    <div id="contenedor-linea">
+                        <button id="bolsa" class="btn">Bolsas</button>
+                        <button id="botella" class="btn">Botellas</button>
+                        <button id="envoltorio" class="btn">Envoltorios</button>
+                    </div>
+                    <div id="contenedor-linea">
+                        <button id="recipiente" class="btn">Recipiente de comida</button>
+                        <button id="vaso" class="btn">Vasos</button>
+                        <button id="cubierto" class="btn">Cubiertos</button>    
+                    </div>
+                    <div id="contenedor-linea">
+                        <button id="globo" class="btn">Globos</button>
+                        <button id="colilla" class="btn">Colillas de cigarro</button>
+                        <button id="otro" class="btn">Otros</button>
+                    </div>  
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay2" id="overlay2">
+      <div class="popup2" id="popup2">
+          <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><p class="fas fa-times">x</p></a>
+          <h3 class ="wrapper">ESTIMACION</h3>
+          <form action="">
+              <div class="contenedor-inputs wrapper">
+                  <p>Lista de plasticos recolectados:
+                    <br>
+                    Bolsas Plasticas: (10) 60g aprox
+                    <br>
+                    Botellas Plasticas: (5) 150g aprox
+                    <br>
+                    Vasos Plasticos: (3) 9g aprox
+                  </p>
+                  <h5>El total sera de: 3.38 lempiras</h5>
+                  <h5>Gracias por apoyarnos!</h5>
+              </div>
+          </form>
+      </div>
+  </div>
+
+
+    <div class="Lista-plasticos wrapper"id="Lista-plasticos">
+        <div class="linea-de-productos">
+            <div class="card">
+                <img class="card-img-top" src="./basura.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bolsas</h5>
+                  <p class="card-text">Cantidad: 10</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./plastico (1).png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Botellas</h5>
+                  <p class="card-text">Cantidad: 5</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./chips.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Envoltorios</h5>
+                  <p class="card-text">Cantidad: 0</p>
+                </div>
+              </div>
+        </div>
+        <div class="linea-de-productos">
+            <div class="card">
+                <img class="card-img-top" src="./contenedor-de-comida.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Recipiente</h5>
+                  <p class="card-text">Cantidad: 0</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./vaso-de-plastico.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Vasos</h5>
+                  <p class="card-text">Cantidad: 3</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./cubiertos.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Cubiertos</h5>
+                  <p class="card-text">Cantidad: 0</p>
+                </div>
+              </div>
+        </div>
+        <div class="linea-de-productos">
+            <div class="card">
+                <img class="card-img-top" src="./balloons (1).png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Globos</h5>
+                  <p class="card-text">Cantidad: 0</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./cigarrillo.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Coillas</h5>
+                  <p class="card-text">Cantidad: 0</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="./elipsis.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Otros</h5>
+                  <p class="card-text">Cantidad: 0</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="espacio">
+        <p>
+            Contactanos 
+            <br>
+            Tel. 9912-3456
+            <br>
+            Gmail: Econtainer.gmail.com
+        </p>
+    </div>
+    <script src="./Econtainer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

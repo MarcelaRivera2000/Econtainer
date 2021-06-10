@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.carousel img{
+    object-fit: cover;
+    object-position: top center;
+}
+
+.tamano{
+    height: 10vh;
+    width: 100vw;
+    object-position: center;
+}
+
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.centro{
+    width: 20%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    opacity: 80%;
+    color: #fff;  
+    width: 100%;
+    overflow: hidden;
+    background-image: radial-gradient(circle at -20.71% 50%, #e3f300 0, #c1ee00 12.5%, #9ee600 25%, #77dc00 37.5%, #4ace22 50%, #00c032 62.5%, #00b33f 75%, #00a84a 87.5%, #009f55 100%);
+}
+
+header .logo{
+    width: 45px;
+    max-width: 45px;
+    height: 45px;
+    max-height: 45px;
+    object-position: center;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.ds{
+    line-height:150px;
+    float:left;
+    font-size: 50px;
+    color: black;
+    object-position: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav{
+    float:right;
+    line-height: 150px;
+    text-decoration: none;
+}
+
+.seccion{
+    margin-bottom: 100px;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background: #004726;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.contenido{
+    padding-top: 50px;
+}
+
+.header2{
+    z-index: 100;/*Para poner algo encima de todo*/
+    position: fixed ;
+    height: 120px;
+    opacity: 80%;
+}
+
+.header2 .logo{
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.header2 nav{
+    line-height: 100px;
+}
+
+@media screen and (max-width: 950px){
+    header .logo,
+    header nav{
+        width:100%;
+        text-align:center;
+        line-height:100px;
+    }
+    .header2{
+        height:auto;
+    }
+    .header2 .logo,
+    .header2 nav{
+        line-height: 50px;
+    }
+}
+
+.progressBar{
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+}
+
+
+#boton{
+    min-width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    border:#000000;
+    background-color: white;
+    outline-color: #00be65;
+    border: 1px solid #dbdbdb;
+    transition: .3 ease all;
+    margin-bottom: 20px;
+}
+
+#boton1{
+    width: 63%;
+    min-width: 50%;
+    height: 35px;
+    margin-right:5%;
+    border:#000000;
+    border-radius: 10px;
+    outline-color: #00be65;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    transition: .3 ease all;
+    margin-bottom: 20px;
+}
+
+#boton:hover{
+    color: #00be65;
+    border: 2px solid #00be65;
+}
+
+#boton1:hover{
+    color: #00be65;
+    border: 2px solid #00be65;
+}
+
+
+.espacio{
+    opacity: 80%;
+    background-image: radial-gradient(circle at -20.71% 50%, #e3f300 0, #c1ee00 12.5%, #9ee600 25%, #77dc00 37.5%, #4ace22 50%, #00c032 62.5%, #00b33f 75%, #00a84a 87.5%, #009f55 100%);
+    height: 75px;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-inputs #contenedor-linea .btn{
+    width: 150px;
+    height: 80px;
+    outline:none;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #dbdbdb;
+    font-size: 15px;
+    transition: .3 ease all;
+}
+.contenedor-inputs #contenedor-linea .btn:hover{
+    border: 2px solid #00be65;
+    color: #00be65;
+}
+.overlay{
+    z-index: 100;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;/*para que ;a visibilidad desaparesca*/
+}
+.overlay.active{
+    visibility: visible;
+}
+
+
+
+.popup{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 620px;
+    height: 500px;
+}
+
+
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    text-align: left;
+    color: #BBBBBB;
+    transition: .3 ease all;
+    text-decoration: none;
+}
+.popup .btn-cerrar-popup:hover{
+    color: #00be65;
+}
+
+p #tam{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    border:#000000;
+    margin:10px;
+    outline: none;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+}
+.popup h3{
+    color: #00be65;
+}
+
+
+.linea-de-productos{
+    display: flex;
+}
+
+.linea-de-productos .card{
+    margin: 5px;
+    width: 40%;
+    height: 15rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+}
+
+.linea-de-productos .card .card-img-top{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 25%;
+    opacity: 80%;
+}
+
+.linea-de-productos .card .card-body .card-title{
+    color: #00be65;
+}
+
+#div-2{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#div-2 #div-2-MV{
+    margin-left:5%;
+    margin-right:5%;
+    text-align: center;
+}
+
+#div-2 #div-2-MV h3{
+    color: #00be65;
+}
+
+#div-2-MV2{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#div-2-MV2 h3{
+    color: #00be65;
+}
+
+.Lista-plasticos{
+    margin-bottom: 100px;
+}
+
+h2{
+text-align: center;
+}
+
+.overlay2{
+    z-index: 100;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;/*para que ;a visibilidad desaparesca*/
+}
+.overlay2.active{
+    visibility: visible;
+}
+
+.popup2{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 620px;
+    height: 300px;
+}
+
+.popup2 .btn-cerrar-popup2{
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    text-align: left;
+    color: #BBBBBB;
+    transition: .3 ease all;
+    text-decoration: none;
+}
+.popup2 .btn-cerrar-popup2:hover{
+    color: #00be65;
+}
+.overlay2 .popup2 h3{
+    color: #009f55;
+}
