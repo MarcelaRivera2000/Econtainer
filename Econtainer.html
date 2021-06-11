@@ -65,7 +65,7 @@
             <form action="">
                 <div class="contenedor-inputs wrapper">
                     <div id="contenedor-linea">
-                        <button id="bolsa" class="btn">Bolsas</button>
+                        <button id="btn-bolsa" class="btn" onclick="agregarBolsa();">Bolsas</button>
                         <button id="botella" class="btn">Botellas</button>
                         <button id="envoltorio" class="btn">Envoltorios</button>
                     </div>
@@ -112,7 +112,7 @@
                 <img class="card-img-top" src="./basura.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Bolsas</h5>
-                  <p class="card-text">Cantidad: 10</p>
+                  <p id="cantidad-bolsa" class="card-text">Cantidad: 0</p>
                 </div>
               </div>
               <div class="card">
