@@ -37,14 +37,30 @@ btnAbrir2.addEventListener('click',function(){
 
 var bolsa= document.getElementById('bolsa'),
   botella= document.getElementById('botella'),
-  envoltorio= document.getElementById('envoltorio'),
-  recipiente= document.getElementById('recipiente'),
   vaso= document.getElementById('vaso'),
-  cubierto= document.getElementById('cubierto'),
-  globo= document.getElementById('globo'),
-  colilla= document.getElementById('colilla'),
-  otro= document.getElementById('otro');
+  input=document.getElementById('tam'),
+  cantBols=document.getElementById('cantBols'),
+  cantBote=document.getElementById('cantBote'),
+  cantVas=document.getElementById('cantVas'),
+  progresBar=document.getElementById('progresBar');
 
 bolsa.addEventListener('click',function(){
-    overlay2.classList.remove('active');
+    var cont=input.value;
+    cantBols.innerHTML="Cantidad: "+cont;
+    input.value=' ';
+    progresBar.value=progresBar.value+4;
+});
+
+vaso.addEventListener('click',function(){
+  var cont=input.value;
+  cantVas.innerHTML="Cantidad: "+cont;
+  input.value=' ';
+  progresBar.value=progresBar.value+4;
+});
+
+botella.addEventListener('click',function(){
+  var cont=input.value;
+  cantBote.innerHTML="Cantidad: "+cont;
+  input.value=' ';
+  progresBar.value=progresBar.value+4;
 });
